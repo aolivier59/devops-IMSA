@@ -4,7 +4,7 @@
 
 ### Prérequis
 
-1. Jenkins déjà configuré : http://151.80.61.88:8080/
+1. Jenkins déjà configuré : http://57.128.215.130:8080/
 2. Créer un compte GitHub : https://github.com
 3. Forker le projet Maven avec Jenkinsfile :  
    https://github.com/BAliani/simple-java-maven-app.git
