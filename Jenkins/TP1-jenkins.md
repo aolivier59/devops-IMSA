@@ -6,7 +6,7 @@
 Créer un **projet simple** sans script, basé sur des actions configurées dans l’interface.
 
 ### ⚙️ Étapes
-0. utiliser l'instance Jenkins: 
+0. utiliser l'instance Jenkins: http://57.128.215.130:8080/
 1. Tableau de bord → **Nouveau Item**  
 2. Nom : `TP1-Freestyle`  
 3. Type : **Projet freestyle**  
