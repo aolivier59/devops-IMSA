@@ -1,0 +1,22 @@
+- hosts: node
+  become: yes
+  tasks:
+  - name: creation du repertoire/app_data
+    ansible.builtin.file:
+      path: /app_data
+      state: directory
+      mode: '0755'
+  - name: creation du groupe app_group
+    ansible.builtin.group:
+      name: app_group
+      state: present
+  - name: creer utilisateur app_user
+    ansible.builtin.user:
+      name: app_user
+      group: app_group
+  - name: app_user proprietaire de app_data
+    ansible.builtin.file:
+      path: /app_data
+      owner: app_user
+      group: app_group
+      mode: '744'
